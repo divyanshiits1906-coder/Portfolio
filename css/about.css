@@ -1,0 +1,293 @@
+/* about - hero */
+.about-hero {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 10em 6em 6em 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+  color: var(--fg);
+  overflow: hidden;
+  gap: 6em;
+}
+
+.about-hero-content {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  text-align: left;
+  z-index: 2;
+}
+
+.about-hero .about-hero-header {
+  text-align: left;
+}
+
+.about-hero .about-hero-header h1 {
+  font-size: clamp(4.5rem, 8vw, 7.5rem);
+  line-height: 0.9;
+  font-family: "formula-narrow", sans-serif;
+  text-transform: uppercase;
+}
+
+.about-hero .about-hero-bio {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.about-hero .about-hero-bio p.ss {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  line-height: 1.4;
+  font-weight: 500;
+  max-width: 90%;
+}
+
+.about-hero .about-hero-bio p.mn {
+  font-family: "supply-mono", monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+}
+
+.about-hero .about-hero-portrait {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  border-radius: 1.5em;
+  overflow: hidden;
+  border: 0.25em solid var(--accent3);
+  outline: 0.25em solid var(--accent1);
+  transform: rotate(5deg);
+  box-shadow: 12px 12px 0 var(--fg);
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.about-hero .about-hero-portrait:hover {
+  transform: rotate(2deg) scale(1.02);
+}
+
+.about-hero .about-hero-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* about - about copy */
+.about-copy {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  padding: 8em 2em 8em 2em;
+}
+
+.about-copy .about-copy-content {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent1);
+  border: 0.25em solid var(--fg);
+  border-radius: 1em;
+  padding: 3em 2em;
+  gap: 2em;
+}
+
+.about-copy .about-copy-content h3 {
+  font-weight: 400;
+}
+
+.about-copy .about-copy-content h3 span {
+  font-weight: 900;
+}
+
+.about-copy .tag {
+  position: absolute;
+  width: max-content;
+  background-color: var(--fg);
+  border-radius: 0.5em;
+}
+
+.about-copy .tag p {
+  text-transform: uppercase;
+  color: var(--bg);
+  font-size: 1rem;
+  padding: 0.75em 0.5em 0.5em 0.5em;
+}
+
+.about-copy #tag-1 {
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%) rotate(20deg);
+}
+
+.about-copy #tag-2 {
+  top: 65%;
+  left: 10%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.about-copy #tag-3 {
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%) rotate(5deg);
+}
+
+.about-copy #tag-4 {
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.about-copy #tag-5 {
+  top: 100%;
+  left: 80%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+/* about - skills */
+.skills {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 4em 2em 4em 2em;
+}
+
+.skills .skills-copy {
+  margin: 0 auto;
+  padding: 2em;
+  width: max-content;
+  text-align: center;
+  border: 0.2em dashed var(--fg);
+  border-radius: 1em;
+}
+
+/* about - stats */
+.stats {
+  padding: 8em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.stats .stats-row {
+  display: flex;
+  gap: 2em;
+}
+
+.stats .stats-header {
+  flex: 1;
+}
+
+.stats .stats-item-1 {
+  flex: 1;
+  background-color: var(--accent1);
+}
+
+.stats .stats-item-2 {
+  flex: 3;
+  background-color: var(--accent3);
+}
+
+.stats .stats-item-3 {
+  flex: 2;
+  background-color: var(--fg);
+  color: var(--bg);
+}
+
+.stats .stats-item-1,
+.stats .stats-item-2,
+.stats .stats-item-3 {
+  aspect-ratio: 16/7;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.stats .stats-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .about-hero {
+    flex-direction: column;
+    padding: 8em 2em 4em 2em;
+    gap: 3.5em;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-hero-content {
+    text-align: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .about-hero .about-hero-header {
+    text-align: center;
+  }
+
+  .about-hero .about-hero-header h1 {
+    font-size: clamp(3.5rem, 10vw, 5.5rem);
+  }
+
+  .about-hero .about-hero-bio {
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-hero .about-hero-bio p.ss {
+    max-width: 100%;
+  }
+
+  .about-hero .about-hero-portrait {
+    width: 260px;
+    transform: rotate(3deg);
+    box-shadow: 8px 8px 0 var(--fg);
+  }
+
+  .about-copy .about-copy-content {
+    width: 100%;
+  }
+
+  .about-copy .about-copy-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-copy .tag {
+    display: none;
+  }
+
+  .skills .skills-copy {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+  }
+
+  .stats .stats-row {
+    flex-direction: column;
+  }
+
+  .stats .stats-col {
+    width: 100%;
+    text-align: center;
+    gap: 4em;
+  }
+
+  .stats .stats-header {
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+}
