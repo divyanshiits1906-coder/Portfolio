@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Reusing patterns from prior brand-kit engagements while tailoring to a new sector"
       ],
       skills: ["Brand Design", "Identity Design", "Logo Design", "Brand Guidelines", "Design Systems"],
-      link: "#"
+      link: "/projects/kronus.pdf"
     },
     {
       title: "Logo & Brandkit",
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Figma advanced techniques for brand system organization"
       ],
       skills: ["Brand Design", "Identity Design", "Logo Design", "Brand Guidelines", "Design Systems"],
-      link: "#"
+      link: "/projects/vertical_elevators.pdf"
     },
     {
       title: "SaaS Series A Pitchdeck & Research",
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Structured narrative sequencing significantly improves how audiences absorb market, traction, and financial information in presentation environments."
       ],
       skills: ["Pitch Deck Design", "Presentation Narrative", "Market Research", "Visual Storytelling", "Information Design", "Layout Systems", "Startup Positioning"],
-      link: "#"
+      link: "/projects/neuronest.pdf"
     },
     {
       title: "AI Legal-Tech Pitch Deck",
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Presentation design extends beyond aesthetics into narrative construction and business communication."
       ],
       skills: ["Pitch Deck Design", "Presentation Systems", "Visual Storytelling", "Typography Systems", "Data Visualization", "Competitor Analysis", "Investor Communication Design", "Slide Structuring"],
-      link: "#"
+      link: "/projects/lexvault.pdf"
     },
     {
       title: "Healthcare Brand Identity",
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Building application-first identities improves how brands scale across physical and digital environments."
       ],
       skills: ["Brand Strategy", "Visual Identity Design", "Logo System Development", "Typography System", "UI Direction & Digital Concepts", "Brand Guidelines", "Application Design", "Design Systems"],
-      link: "#"
+      link: "/projects/syros.pdf"
     }
   ];
 
