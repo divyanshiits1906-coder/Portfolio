@@ -491,7 +491,7 @@
         
       </div>
       <div class="copyright-info">
-        <p class="mn">© - Divyanshi Gupta // 2026</p>
+        <p class="mn">turning vision into visuals</p>
         <p class="mn"></p>
       </div>
       <div class="explosion-container"></div>
@@ -517,42 +517,92 @@
   <div class="project-drawer-overlay" id="projectDrawer">
     <div class="drawer-backdrop"></div>
     <div class="drawer-panel">
-      <button class="drawer-close-btn">&times;</button>
-      <div class="drawer-content">
+      <button class="drawer-close-btn" title="Close Details">&times;</button>
+      
+      <!-- Scrollable Content with Lenis scroll block -->
+      <div class="drawer-content" data-lenis-prevent>
+        <!-- Image Banner (occupies 1/2 of viewport height initially, but scrolls!) -->
         <div class="drawer-image-holder">
           <img src="" alt="" class="drawer-cover-image" />
-        </div>
-        <div class="drawer-header">
-          <p class="mn drawer-category">Category</p>
-          <h2 class="drawer-title">Project Title</h2>
+          <a href="#" class="drawer-redirect-btn" target="_blank" title="View live project ↗">
+            <span>↗</span>
+          </a>
         </div>
         
-        <div class="drawer-body">
-          <div class="drawer-section">
-            <h4>About the Project</h4>
-            <p class="drawer-about">Project description goes here...</p>
+        <!-- Text Details wrapper with padding -->
+        <div class="drawer-details">
+          <div class="drawer-header">
+            <h2 class="drawer-title">Project Title</h2>
           </div>
           
-          <div class="drawer-section">
-            <h4>Design Strategy</h4>
-            <p class="drawer-strategy">Strategy details go here...</p>
-          </div>
+          <div class="drawer-body">
+            <!-- 1. About the Project -->
+            <div class="drawer-section">
+              <h4>About the Project</h4>
+              <p class="drawer-about">Project description goes here...</p>
+            </div>
+            
+            <!-- 2. Design Strategy -->
+            <div class="drawer-section">
+              <h4>Design Strategy</h4>
+              <p class="drawer-strategy">Strategy details go here...</p>
+            </div>
 
-          <div class="drawer-section">
-            <h4>Tools Used</h4>
-            <div class="drawer-tools-grid">
-              <!-- Dynamically populated badges -->
+            <!-- 3. Integrated Services -->
+            <div class="drawer-section">
+              <h4>Integrated Services</h4>
+              <div class="drawer-skills-grid">
+                <!-- Dynamically populated badges -->
+              </div>
+            </div>
+
+            <!-- 4. Key Learnings -->
+            <div class="drawer-section">
+              <h4>Key Learnings</h4>
+              <ul class="drawer-learnings">
+                <!-- Dynamically populated learning bullet items -->
+              </ul>
+            </div>
+
+            <!-- 5. Project Overview -->
+            <div class="drawer-section">
+              <h4>Project Overview</h4>
+              <div class="drawer-overview-card">
+                <!-- Left side: Timeline Stat Display -->
+                <div class="overview-stat-col">
+                  <span class="stat-number drawer-time-val">-</span>
+                  <span class="stat-label drawer-time-unit">-</span>
+                </div>
+                
+                <!-- Vertical Divider -->
+                <div class="overview-divider"></div>
+                
+                <!-- Right side: Meta Details List -->
+                <div class="overview-details-col">
+                  <div class="overview-detail-row">
+                    <strong>Role:</strong>
+                    <span class="drawer-role">-</span>
+                  </div>
+                  <div class="overview-detail-row">
+                    <strong>Team:</strong>
+                    <span class="drawer-team">-</span>
+                  </div>
+                  <div class="overview-detail-row">
+                    <strong>Status:</strong>
+                    <span class="drawer-status">-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Tools Used -->
+            <div class="drawer-section">
+              <h4>Tools Used</h4>
+              <div class="drawer-tools-grid">
+                <!-- Dynamically populated badges -->
+              </div>
             </div>
           </div>
-
-          <div class="drawer-section drawer-review-section">
-            <h4>What the Client Says</h4>
-            <blockquote class="drawer-review">"Review text goes here..."</blockquote>
-          </div>
-        </div>
-
-        <div class="drawer-footer">
-          <a href="#" class="drawer-link-btn" target="_blank">View Full Case Study ➔</a>
         </div>
       </div>
     </div>
